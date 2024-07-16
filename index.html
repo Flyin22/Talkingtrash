@@ -7,48 +7,72 @@
     <meta name="description" content="Website for Talkingtrash.llc, Dumpster rental, waste removal, Dumpster, trash, environmental cleaning.">
     <title>Talking Trash</title>
     <style>
-        html {
-            font-size: 22px;
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: x-large;
         }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url('images/output_image5.JPG') repeat center center fixed;
+            background-size: cover;
+            opacity: 0.35; /* Adjust the opacity as needed */
+            z-index: -1; /* Ensure the background stays behind other content */
+        }
+
         body {
             background-color: white;
-            color: royalblue;
+            color: rgb(1, 4, 14);
             text-align: center;
             font-family: Arial, sans-serif;
+            position: relative; /* Ensures body content appears above the background */
         }
+
         img {
             display: inline-block;
             margin: 0 auto;
         }
+
         .large-img {
             width: 400px;
             height: 300px;
         }
+
         .medium-img {
-    
             width: 400px;
             height: 300px;
         }
+
         .small-img {
             width: 150px;
             height: 150px;
         }
+
         .form-container {
-            background: white;
+            background: rgb(163, 176, 219);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             margin: 20px auto;
         }
+
         .form-container h2 {
             margin-bottom: 20px;
         }
+
         .form-container label {
             display: block;
             margin-bottom: 5px;
             text-align: left;
         }
+
         .form-container input,
         .form-container textarea,
         .form-container select,
@@ -60,18 +84,21 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
+
         .form-container button {
             background-color: #4CAF50;
             color: white;
             border: none;
             cursor: pointer;
         }
+
         .form-container button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
+    <div class="background-container"></div>
 
     <div>
         <img src="images/TalkingTrash logo.png" alt="Logo" class="large-img">
@@ -80,51 +107,47 @@
     <h1>Let's talk trash</h1>
     <p>Talking Trash offers top-notch trash and debris removal services. With timely pickup and drop-off times, serving the Wisconsin area. Contact us today and schedule your dumpster and trash removal needs.</p>
 
-    <p>
-        "We offer construction cleanup with dump trailer and containers 7x14 & 7x20" 
-        <br>
-        for all your trash and debris removal needs.
-
-    </p>
+   
 
     <img src="images/output_image3.JPG" alt="Image" class="medium-img">
     <img src="images/output_image6.JPG" alt="Image" class="medium-img">
-    
 
+    <br>
+    <br>
+
+    <p>
+        "Upgrade your construction cleanup with our versatile 7x14 and 7x20 dump trailers and containers. Perfect for all your trash and debris removal needs, we provide efficient, reliable solutions to keep your site clean and safe."
+    </p>
     <div>
-        
-        
         <img src="images/output_image1.JPG" alt="Image" class="small-img">
         <img src="images/output_image4.JPG" alt="Image" class="small-img">
         <img src="images/IMG_5285.JPG" alt="Image" class="small-img">
-        
     </div>
 
     <div class="form-container">
         <h2>Contact Us</h2>
-        <form action="https://formsubmit.co/bry.startup@gmail.com" method="POST" >
+        <form action="https://formsubmit.co/bry.startup@gmail.com" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-    
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-    
+
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone">
-    
+
             <label for="service">Service Needed:</label>
             <select id="service" name="service">
                 <option value="trash-removal">Trash Removal</option>
                 <option value="debris-removal">Debris Removal</option>
                 <option value="cleanup">Construction Cleanup</option>
             </select>
-    
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" placeholder="Let us know how we can help!" rows="4" required></textarea>
-    
+
             <button type="submit">Submit</button>
         </form>
     </div>
-
 </body>
 </html>

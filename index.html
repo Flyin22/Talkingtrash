@@ -100,20 +100,9 @@
 
         @media (max-width: 600px) {
             .large-img, .medium-img, .small-img {
-                width: 50%;
+                width: 100%;
                 height: auto;
             }
-             .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: url('images/output_image5.JPG') repeat center center fixed;
-            background-size: cover;
-            opacity: 0.35;
-            z-index: -1;
-        }
 
             .form-container {
                 padding: 10px;
@@ -124,6 +113,12 @@
 
             body {
                 font-size: medium;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .background-container {
+                background-size: contain;
             }
         }
     </style>
@@ -139,7 +134,7 @@
     <p>Talking Trash offers top-notch trash and debris removal services. With timely pickup and drop-off times, serving the Wisconsin area. Contact us today and schedule your dumpster and trash removal needs.</p>
 
     <img src="images/output_image3.JPG" alt="Image" class="medium-img">
-    <img src="images/output_image6.JPG" alt="Image" class="medium-img">
+    
 
     <br><br>
 
@@ -180,4 +175,5 @@
     </div>
 </body>
 </html>
+
 

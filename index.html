@@ -11,7 +11,6 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
-            font-size: x-large;
         }
 
         .background-container {
@@ -22,8 +21,8 @@
             width: 100%;
             background: url('images/output_image5.JPG') repeat center center fixed;
             background-size: cover;
-            opacity: 0.35; /* Adjust the opacity as needed */
-            z-index: -1; /* Ensure the background stays behind other content */
+            opacity: 0.35;
+            z-index: -1;
         }
 
         body {
@@ -31,27 +30,30 @@
             color: rgb(1, 4, 14);
             text-align: center;
             font-family: Arial, sans-serif;
-            position: relative; /* Ensures body content appears above the background */
+            position: relative;
+            font-size: x-large;
         }
 
         img {
             display: inline-block;
             margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
         .large-img {
             width: 400px;
-            height: 300px;
+            height: auto;
         }
 
         .medium-img {
             width: 400px;
-            height: 300px;
+            height: auto;
         }
 
         .small-img {
             width: 150px;
-            height: 150px;
+            height: auto;
         }
 
         .form-container {
@@ -95,6 +97,24 @@
         .form-container button:hover {
             background-color: #45a049;
         }
+
+        @media (max-width: 600px) {
+            .large-img, .medium-img, .small-img {
+                width: 100%;
+                height: auto;
+            }
+
+            .form-container {
+                padding: 10px;
+                box-shadow: none;
+                max-width: 90%;
+                margin: 10px auto;
+            }
+
+            body {
+                font-size: medium;
+            }
+        }
     </style>
 </head>
 <body>
@@ -107,17 +127,15 @@
     <h1>Let's talk trash</h1>
     <p>Talking Trash offers top-notch trash and debris removal services. With timely pickup and drop-off times, serving the Wisconsin area. Contact us today and schedule your dumpster and trash removal needs.</p>
 
-   
-
     <img src="images/output_image3.JPG" alt="Image" class="medium-img">
     <img src="images/output_image6.JPG" alt="Image" class="medium-img">
 
-    <br>
-    <br>
+    <br><br>
 
     <p>
         "Upgrade your construction cleanup with our versatile 7x14 and 7x20 dump trailers and containers. Perfect for all your trash and debris removal needs, we provide efficient, reliable solutions to keep your site clean and safe."
     </p>
+
     <div>
         <img src="images/output_image1.JPG" alt="Image" class="small-img">
         <img src="images/output_image4.JPG" alt="Image" class="small-img">
@@ -151,3 +169,4 @@
     </div>
 </body>
 </html>
+
